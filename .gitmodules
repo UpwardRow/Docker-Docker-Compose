@@ -1,0 +1,3 @@
+[submodule "bind_mounts/duo-task"]
+	path = bind_mounts/duo-task
+	url = https://gitlab.com/qacdevops/duo-task
