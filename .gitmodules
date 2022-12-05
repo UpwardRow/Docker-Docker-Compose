@@ -1,3 +1,6 @@
 [submodule "bind_mounts/duo-task"]
 	path = bind_mounts/duo-task
 	url = https://gitlab.com/qacdevops/duo-task
+[submodule "docker_compose_cli/python-front-and-back"]
+	path = docker_compose_cli/python-front-and-back
+	url = https://gitlab.com/qacdevops/python-front-and-back
