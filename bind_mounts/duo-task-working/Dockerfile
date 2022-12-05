@@ -5,7 +5,7 @@ FROM python:3.6
 COPY . .
 
 # Install pip dependencies from requirements
-RUN pip install requirements.txt
+RUN pip install -r requirements.txt
 
 # Set YOUR_NAME environment variable
 ENV YOUR_NAME=YOUR_NAME
@@ -14,4 +14,4 @@ ENV YOUR_NAME=YOUR_NAME
 EXPOSE 5500
 
 # Create an entrypoint
-ENTRYPOINT["python", "app.py"]
+ENTRYPOINT ["python", "app.py"]
