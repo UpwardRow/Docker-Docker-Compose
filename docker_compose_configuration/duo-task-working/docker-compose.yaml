@@ -2,6 +2,9 @@ version: "3.8"
 services:
   application:
     build: ./application
+    ports:
+      - target: 5500
+        published: 5500
   nginx:
     image: nginx:latest
     volumes:
