@@ -10,4 +10,4 @@ ENV MYSQL_ROOT_PASSWORD=thepassword
 # Add the content of the .sql file to your image
 # All scripts copied to docker-entrypoint-initdb.d/ are automatically
 # executed during container startup
-COPY . docker-entrypoint-init.d/
+COPY . docker-entrypoint-initdb.d/
