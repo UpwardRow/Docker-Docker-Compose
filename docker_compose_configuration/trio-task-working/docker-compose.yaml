@@ -7,7 +7,7 @@ services:
       published: 3306
       # I can specify the protocol with protocol: tcp, but that will be the protocol by default anyway
   flask-app:
-    build: ./application
+    build: ./flask-app
     ports:
       - target: 5000
         published: 5000
