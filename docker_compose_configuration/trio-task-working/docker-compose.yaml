@@ -1,11 +1,16 @@
 version: "3.8"
 services:
+  mysql:
+    build: ./db
+    ports:
+    - target: 3306
+      published: 3306
+      # I can specify the protocol with protocol: tcp, but that will be the protocol by default anyway
   flask-app:
     build: ./application
     ports:
-      - target: 5500
-        published: 5500
-        # I can specify the protocol with protocol: tcp, but that will be the protocol by default anyway
+      - target: 5000
+        published: 5000
   nginx:
     image: nginx:latest
     volumes:
