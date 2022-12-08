@@ -13,3 +13,6 @@
 [submodule "jenkins_tutorial/trio-task"]
 	path = jenkins_tutorial/trio-task
 	url = https://gitlab.com/qacdevops/trio-task.git
+[submodule "jenkins_advanced_tutorial/chaperootodo_client"]
+	path = jenkins_advanced_tutorial/chaperootodo_client
+	url = https://gitlab.com/qacdevops/chaperootodo_client.git
