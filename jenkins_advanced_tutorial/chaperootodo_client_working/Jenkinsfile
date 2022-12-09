@@ -40,7 +40,9 @@ pipeline{
             }
             stage('Deploy App'){
                 steps{
-                    sh "docker-compose pull && docker-compose up -d"
+                    dir('jenkins_advanced_tutorial/chaperootodo_client_working') {
+                        sh "docker-compose pull && docker-compose up -d"
+                    }
                 }
             }
         }
