@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   chaperoo-client:
-    image: upwardrow/chaperoo-client
+    image: upwardrow/chaperoo-client:${app_version}
     build: .
     ports:
       - target: 80
