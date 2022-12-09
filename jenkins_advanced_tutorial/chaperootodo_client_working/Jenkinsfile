@@ -22,7 +22,7 @@ pipeline{
                     dir('jenkins_advanced_tutorial/chaperootodo_client_working') {
                         script{
                             if (env.rollback == 'false'){
-                                image = docker.build("upwardrow/chaperoo-frontend")
+                                image = docker.build("upwardrow/chaperoo-client")
                             }
                         }
                     }
